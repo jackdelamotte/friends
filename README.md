@@ -21,3 +21,24 @@ check in on friends
    ```sh
    deactivate
    ```
+
+## Running as a Daily Cron Job (Ubuntu)
+
+If you want to automatically run `reminders.py` every morning at 8am, you can use the provided bash script to set up a cron job.
+
+1. **Make sure your virtual environment and dependencies are set up as above.**
+2. **Create the cron setup script:**
+
+   ```sh
+   ./setup_cron.sh
+   ```
+
+   This will add a cron job to run the script every day at 8am.
+
+3. **To remove the cron job:**
+
+   ```sh
+   crontab -e
+   ```
+
+   Then delete the line referencing `reminders.py`.
