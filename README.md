@@ -19,8 +19,28 @@ check in on friends
 
 3. **Deactivate the environment when done:**
    ```sh
-   deactivate
-   ```
+  deactivate
+  ```
+
+## Configuration
+
+Create a `.env` file with the following variables so the scripts can send and
+receive email:
+
+```bash
+GEMINI_API_KEY=your_gemini_key
+GMAIL_ADDRESS=your_gmail_address
+GMAIL_APP_PASSWORD=your_gmail_app_password
+```
+
+Make sure IMAP access is enabled on your Gmail account. The same credentials are
+used to send the daily summary email and to check for replies.
+
+## Adding Updates via Email
+
+Reply to the daily "friends summary" email with one line per friend in the form
+`Name: your update here`. When `reminders.py` runs, it will read any unread
+replies and append those updates to `friends.yaml` under today's date.
 
 ## Running as a Daily Cron Job (Ubuntu)
 

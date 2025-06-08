@@ -4,8 +4,10 @@ import yaml
 from send_email import send_email
 from google import genai
 from load_dotenv import load_dotenv
+from process_replies import check_replies
 
 load_dotenv()
+check_replies()
 
 FRIENDS_FILE = os.path.join(os.path.dirname(__file__), "friends.yaml")
 
