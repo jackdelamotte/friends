@@ -1,4 +1,4 @@
 .env
-friends.json
+friends.yaml
 *.pyc
 venv

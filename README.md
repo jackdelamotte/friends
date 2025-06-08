@@ -37,8 +37,10 @@ If you want to automatically run `reminders.py` every morning at 8am, you can us
 
 3. **To remove the cron job:**
 
+   You can use the provided script:
+
    ```sh
-   crontab -e
+   ./cancel_cron.sh
    ```
 
-   Then delete the line referencing `reminders.py`.
+   This will remove any cron job for `reminders.py` for the current user.
