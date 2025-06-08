@@ -44,3 +44,7 @@ If you want to automatically run `reminders.py` every morning at 8am, you can us
    ```
 
    This will remove any cron job for `reminders.py` for the current user.
+
+## Sample Data
+
+A sample friends YAML file is provided at `samples/sample-friends.yaml` for new users. You can use this file as a reference or starting point when creating your own `friends.yaml`.

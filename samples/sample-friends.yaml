@@ -1,0 +1,10 @@
+- name: Bob
+  closeness: 5
+  background: Bob is a coworker who enjoys hiking.
+  personal_details:
+    2024-06-01: Bob is planning a weekend hike.
+- name: Alice
+  closeness: 8
+  background: Alice is a neighbor who loves baking.
+  personal_details:
+    2024-06-01: Alice baked cookies for her friends.
